@@ -1,0 +1,49 @@
+.backToShop {
+  width: 15em;
+  background-color: $Blue;
+  padding: 8px;
+  a {
+    display: flex;
+    text-decoration: none;
+    color: $lightBlack;
+    align-items: center;
+    .fa {
+      padding: 20px;
+      font-size: 1.5rem;
+      color: $lightBlack;
+    }
+  }
+}
+
+// clear button
+.clearButton {
+  position: relative;
+  cursor: pointer;
+  border: none;
+  margin-top: -40px;
+  background-color: $Blue;
+  padding: 10px;
+  font-family: $fontFamily;
+  font-size: 1.2rem;
+  font-weight: 600;
+  &:hover {
+    background: $lightBlue;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+@media only screen and (max-width: 788px) {
+  .backToShop {
+    a {
+      font-size: 0.8rem;
+      .fa {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .clearButton {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,121 @@
+.pageFooter {
+  position: relative;
+  text-align: center;
+  padding: 2rem 0;
+  background-color: $lightBrown;
+  font-family: $fontFamily;
+  p {
+    position: relative;
+    font-size: 0.7rem;
+    bottom: -1em;
+  }
+  h2 {
+    text-transform: uppercase;
+    padding: 5px;
+  }
+  .newsletter {
+    padding: 18px;
+    input {
+      padding: 10px 30px 10px 30px;
+      font-family: $fontFamily;
+      &:focus {
+        outline: none;
+      }
+    }
+    button {
+      cursor: pointer;
+      padding: 10px 30px 10px 30px;
+      font-family: $fontFamily;
+      text-transform: uppercase;
+      background-color: $Blue;
+      border: 1px solid #333333;
+      &:hover {
+        background: $lightBlue;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .cms {
+    max-width: 60em;
+    margin: 2% auto;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    .socialIcons {
+      padding: 5px;
+      h3 {
+        padding: 5px;
+        text-transform: uppercase;
+      }
+      .fa {
+        cursor: pointer;
+        font-size: 1.5rem;
+        padding: 15px;
+        &:hover {
+          color: black;
+          background-color: $Blue;
+        }
+      }
+    }
+  }
+  ul {
+    list-style-type: none;
+    li {
+      justify-content: space-evenly;
+      padding: 10px;
+      text-transform: uppercase;
+      &:hover {
+        color: $lightBlack;
+      }
+    }
+    h3 {
+      padding: 10px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// responsive design
+
+@media only screen and (max-width: 700px) {
+  .pageFooter {
+    h2 {
+      font-size: 1.1rem;
+    }
+    .newsletter {
+      input {
+        width: 32vw;
+      }
+      button {
+        padding: 10px 15px 10px 15px;
+        font-size: 0.75rem;
+      }
+    }
+  }
+  .cms {
+    .socialIcons {
+      margin-top: 10%;
+      display: flex;
+      flex-direction: column;
+      h3 {
+        font-size: 0.75rem;
+      }
+      .fa {
+        font-size: 0.5rem;
+      }
+    }
+  }
+  ul {
+    text-align: left;
+    padding: 15px;
+    h3 {
+      font-size: 0.75rem;
+    }
+    li {
+      font-size: 0.75rem;
+    }
+  }
+}

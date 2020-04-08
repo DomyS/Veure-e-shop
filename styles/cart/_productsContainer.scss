@@ -1,0 +1,90 @@
+.productsContainer {
+  max-width: 70em;
+  margin: 5% auto;
+  .fa {
+    font-size: 1.5rem;
+    color: $Blue;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  img {
+    height: 15vh;
+  }
+  .productHeader {
+    max-width: 70em;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-evenly;
+    border-bottom: 4px solid $Grey;
+    .title {
+      width: 20%;
+    }
+    .price {
+      width: 10%;
+    }
+    .quantity {
+      width: 10%;
+    }
+    .total {
+      width: 5%;
+    }
+  }
+  .cartProducts {
+    max-width: 70em;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    .cartProduct {
+      display: flex;
+      max-width: 70em;
+      text-align: center;
+      justify-content: space-around;
+      align-items: center;
+      border-bottom: 1px solid $Grey;
+      .cartHeader {
+        width: 10em;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+    }
+  }
+
+  .basketTotalContainer {
+    margin-top: 2%;
+    font-size: 1.2rem;
+    h4 {
+      padding: 10px;
+      max-width: 10em;
+      float: right;
+    }
+  }
+}
+
+//responsive
+
+@media only screen and (max-width: 788px) {
+  .productsContainer {
+    .fa {
+      font-size: 1rem;
+    }
+    img {
+      height: 9vh;
+    }
+    .productHeader {
+      font-size: 0.9rem;
+    }
+    .cartProduct {
+      font-size: 0.8rem;
+    }
+    .basketTotalContainer {
+      font-size: 0.9rem;
+      margin-right: 10%;
+    }
+  }
+}

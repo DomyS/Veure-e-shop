@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/cart/cart.css" />
+    <link rel="icon" type="image/png" href="images/clock.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Spartan:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <slider>
+        <slide></slide>
+        <slide></slide>
+        <slide></slide>
+      </slider>
+
+      <!--top bar-->
+      <div class="topBar">
+        <div class="row">
+          <!--icons-->
+          <div class="icons">
+            <a href="index.html">
+              <img class="logo" src="images/whiteLogo.png" alt="logo" />
+            </a>
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="Search for watches.." />
+            <div class="cart">
+              <a href="cart.html">
+                <i class="fa fa-shopping-basket"><span id="cart">0</span></i>
+              </a>
+            </div>
+          </div>
+
+          <!--responsive navbar-->
+
+          <div class="nav">
+            <input type="checkbox" id="navCheck" />
+
+            <div class="navBtn">
+              <label for="navCheck">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+
+            <!--Navigation Bar-->
+            <div class="navLinks">
+              <ul>
+                <li>
+                  <a href="#">Brand</a>
+                </li>
+                <li>
+                  <a href="#">Men's Watches</a>
+                </li>
+                <li>
+                  <a href="#">Women's Watches</a>
+                </li>
+                <li>
+                  <a href="#">Straps</a>
+                </li>
+                <li>
+                  <a href="#">Cases</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- back button -->
+    <div class="backToShop">
+      <a href="index.html">
+        <i class="fa fa-long-arrow-left"></i>
+        <h3>Back To Shop</h3>
+      </a>
+    </div>
+
+    <div class="productsContainer">
+      <div class="productHeader">
+        <h5 class="title">product</h5>
+        <h5 class="price">price</h5>
+        <h5 class="quantity">Quantity</h5>
+        <h5 class="total">total</h5>
+      </div>
+      <div class="cartProducts"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

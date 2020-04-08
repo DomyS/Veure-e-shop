@@ -1,0 +1,16 @@
+@import "includes";
+@import "topBar";
+@import "header";
+@import "products";
+@import "promotion";
+@import "footer";
+@import "slide";
+@import "responsNavBar";
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: $fontFamily;
+}

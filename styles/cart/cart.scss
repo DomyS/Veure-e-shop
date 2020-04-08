@@ -1,0 +1,14 @@
+@import "includes";
+@import "topBar";
+@import "header";
+@import "responsNavBar";
+@import "productsContainer";
+@import "backButton";
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: $fontFamily;
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/clock.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Spartan:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles/main/style.css" />
+    <title>Veure</title>
+  </head>
+  <body>
+    <!--slideshow-->
+    <div class="header">
+      <slider>
+        <slide></slide>
+        <slide></slide>
+        <slide></slide>
+      </slider>
+
+      <!--top bar-->
+      <div class="topBar">
+        <div class="row">
+          <!--icons-->
+          <div class="icons">
+            <img class="logo" src="images/whiteLogo.png" alt="logo" />
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="Search for watches.." />
+            <div class="cart">
+              <a href="cart.html">
+                <i class="fa fa-shopping-basket"><span id="cart">0</span></i>
+              </a>
+            </div>
+          </div>
+
+          <!--responsive navbar-->
+
+          <div class="nav">
+            <input type="checkbox" id="navCheck" />
+
+            <div class="navBtn">
+              <label for="navCheck">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+
+            <!--Navigation Bar-->
+            <div class="navLinks">
+              <ul>
+                <li>
+                  <a href="#">Brand</a>
+                </li>
+                <li>
+                  <a href="#">Men's Watches</a>
+                </li>
+                <li>
+                  <a href="#">Women's Watches</a>
+                </li>
+                <li>
+                  <a href="#">Straps</a>
+                </li>
+                <li>
+                  <a href="#">Cases</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--promotion-->
+    <div class="promotion">
+      <h1>Our Newest Products</h1>
+      <h3>
+        Veure watches are inspired by a fearless, but sopfisticated man and
+        women. An explorer, engineer or somebody who loves to spend their time
+        outside.
+      </h3>
+    </div>
+    <!--products-->
+    <div class="products">
+      <h2>Our Mechanical collection</h2>
+      <!--cards-->
+      <div class="cards">
+        <!--card1-->
+        <div class="card">
+          <img src="images/blueTimer.jpg" alt="world" />
+          <h3>Timer Blue</h3>
+          <h4>Automatic</h4>
+          <p>
+            The ultimate travel companion - world timer, that shows time in
+            different cities of the world.
+          </p>
+          <h5>150 $</h5>
+          <input
+            type="button"
+            value="Add To Cart"
+            class="addToCart"
+            onclick="added(this)"
+          />
+        </div>
+        <!--card2-->
+        <div class="card">
+          <img src="images/whiteTimer.jpg" alt="world" />
+          <h3>Timer White</h3>
+          <h4>Automatic</h4>
+          <p>
+            The ultimate travel companion - world timer, that shows time in
+            different cities of the world.
+          </p>
+          <h5>100 $</h5>
+          <input
+            type="button"
+            value="Add To Cart"
+            class="addToCart"
+            onclick="added(this)"
+          />
+        </div>
+        <!--card3-->
+        <div class="card">
+          <img src="images/blackTimer.jpg" alt="world" />
+          <h3>Timer Black</h3>
+          <h4>Automatic</h4>
+          <p>
+            The ultimate travel companion - world timer, that shows time in
+            different cities of the world.
+          </p>
+          <h5>120 $</h5>
+          <input
+            type="button"
+            value="Add To Cart"
+            class="addToCart"
+            onclick="added(this)"
+          />
+        </div>
+        <!--card4-->
+        <div class="card">
+          <img src="images/whiteGTM.jpg" alt="world" />
+          <h3>GTM White</h3>
+          <h4>Automatic</h4>
+          <p>
+            The ultimate travel companion - GTM, that shows time in different
+            cities of the world.
+          </p>
+          <h5>100 $</h5>
+          <input
+            type="button"
+            value="Add To Cart"
+            class="addToCart"
+            onclick="added(this)"
+          />
+        </div>
+        <!--card5-->
+        <div class="card">
+          <img src="images/blueGTM.jpg" alt="world" />
+          <h3>GTM Blue</h3>
+          <h4>Automatic</h4>
+          <p>
+            The ultimate travel companion - GTM, that shows time in different
+            cities of the world.
+          </p>
+          <h5>130 $</h5>
+          <input
+            type="button"
+            value="Add To Cart"
+            class="addToCart"
+            onclick="added(this)"
+          />
+        </div>
+        <!--card6-->
+        <div class="card">
+          <img src="images/blackGTM.jpg" alt="world" />
+          <h3>GTM Black</h3>
+          <h4>Automatic</h4>
+          <p>
+            The ultimate travel companion - GTM, that shows time in different
+            cities of the world.
+          </p>
+          <h5>150 $</h5>
+          <input
+            type="button"
+            value="Add To Cart"
+            class="addToCart"
+            onclick="added(this)"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!--footer-->
+    <footer class="pageFooter">
+      <h2>contact us</h2>
+      <!--newsletter-->
+      <div class="newsletter">
+        <input type="email" placeholder="Enter your email" />
+        <button>sign up</button>
+      </div>
+      <!--footer menu-->
+      <div class="cms">
+        <div class="col">
+          <ul>
+            <h3>Support</h3>
+            <li>contact</li>
+            <li>shipping</li>
+            <li>faqs</li>
+            <li>privacy</li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <h3>Collection</h3>
+            <li>World Timer</li>
+            <li>GMT</li>
+            <li>Aqua</li>
+            <li>Hand Wound</li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <h3>Veure</h3>
+            <li>about</li>
+            <li>guarantee</li>
+            <li>reviews</li>
+            <li>careers</li>
+          </ul>
+        </div>
+        <div class="col">
+          <!--social icons-->
+          <div class="socialIcons">
+            <h3>social media</h3>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+      <p>© 2020 Veure All rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
